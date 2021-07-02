@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/igdownloader/static/css/main.d434b163.chunk.css",
+    "main.css": "/igdownloader/static/css/main.a5741a1b.chunk.css",
     "main.js": "/igdownloader/static/js/main.75634c85.chunk.js",
     "main.js.map": "/igdownloader/static/js/main.75634c85.chunk.js.map",
     "runtime-main.js": "/igdownloader/static/js/runtime-main.6fbd680a.js",
@@ -8,7 +8,7 @@
     "static/js/2.da18337f.chunk.js": "/igdownloader/static/js/2.da18337f.chunk.js",
     "static/js/2.da18337f.chunk.js.map": "/igdownloader/static/js/2.da18337f.chunk.js.map",
     "index.html": "/igdownloader/index.html",
-    "static/css/main.d434b163.chunk.css.map": "/igdownloader/static/css/main.d434b163.chunk.css.map",
+    "static/css/main.a5741a1b.chunk.css.map": "/igdownloader/static/css/main.a5741a1b.chunk.css.map",
     "static/js/2.da18337f.chunk.js.LICENSE.txt": "/igdownloader/static/js/2.da18337f.chunk.js.LICENSE.txt",
     "static/media/post-icon.4b5e2aea.svg": "/igdownloader/static/media/post-icon.4b5e2aea.svg",
     "static/media/profile-icon.568b3adb.svg": "/igdownloader/static/media/profile-icon.568b3adb.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.6fbd680a.js",
     "static/js/2.da18337f.chunk.js",
-    "static/css/main.d434b163.chunk.css",
+    "static/css/main.a5741a1b.chunk.css",
     "static/js/main.75634c85.chunk.js"
   ]
 }
