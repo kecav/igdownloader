@@ -11,5 +11,7 @@ Instagram tool to download instagram media of any public account.
 #FEATURES
 
 *Get HD profile picture of any user.
+
 *Get any public reel using sharable link.
+
 *Get any public post from instagram.
