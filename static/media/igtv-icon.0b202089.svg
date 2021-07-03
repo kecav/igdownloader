@@ -1,0 +1,24 @@
+<svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64px" height="64px">
+    <path
+        fill="none"
+        stroke="#fff"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        d="M20,27h-8c-3.314,0-6-2.686-6-6v-8 c0-3.314,2.686-6,6-6h8c3.314,0,6,2.686,6,6v8C26,24.314,23.314,27,20,27z"
+    />
+    <polyline
+        fill="none"
+        stroke="#fff"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        points="19,3 16,7 13,3"
+    />
+    <polyline
+        fill="none"
+        stroke="#fff"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        points="9,17 16,15 16,19 23,17"
+    />
+</svg>
