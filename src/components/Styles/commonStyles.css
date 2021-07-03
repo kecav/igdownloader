@@ -13,7 +13,7 @@
 .reels-response,
 .post-response {
     max-width: var(--max-width);
-    margin: auto;
+    /* margin: auto; */
 }
 
 .input-form {
@@ -41,6 +41,11 @@
     border: none;
     color: #fff;
     background: #00009f;
+    transition: 0.3s ease;
+}
+
+input.submitBtn:hover {
+    background-color: blue;
 }
 
 .loadingSvg {

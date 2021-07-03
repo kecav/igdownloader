@@ -1,23 +1,23 @@
 import { useState } from "react";
 import "./Styles/post.css";
 
-const Post = (props) => {
-    const [postUrl, setPostUrl] = useState();
+const Igtv = (props) => {
+    const [igtvUrl, setIgtvUrl] = useState();
     const [isLoading, setIsLoading] = useState(false);
     const [hasLoaded, setHasLoaded] = useState(false);
     const [responseObj, setResponseObj] = useState();
 
     function getId(url) {
-        return url.slice(28, 39);
+        return url.slice(29, 40);
     }
 
     function onChangehandler(e) {
-        setPostUrl(e.target.value);
+        setIgtvUrl(e.target.value);
     }
 
     function submitHandler(e) {
         e.preventDefault();
-        if (postUrl.length === 0) {
+        if (igtvUrl.length === 0) {
             alert("Empty Post link !");
             return;
         }
@@ -26,14 +26,14 @@ const Post = (props) => {
     }
 
     async function fetchPost() {
-        const postId = getId(postUrl);
+        const igtvId = getId(igtvUrl);
         // if(postId!== 11){
         //     alert("Invalid Url");
         //     setIsLoading(false);
         //     return;
         // }
         const response = await fetch(
-            `https://instagram-bulk-profile-scrapper.p.rapidapi.com/clients/api/ig/media_by_id?shortcode=${postId}&response_type=feeds&corsEnabled=true`,
+            `https://instagram-bulk-profile-scrapper.p.rapidapi.com/clients/api/ig/media_by_id?shortcode=${igtvId}&response_type=feeds&corsEnabled=true`,
             {
                 method: "GET",
                 headers: {
@@ -57,7 +57,7 @@ const Post = (props) => {
                     type="text"
                     className="inputBox"
                     onChange={onChangehandler}
-                    placeholder="Enter post link"
+                    placeholder="Enter IGTV link"
                 />
                 <input type="submit" className="submitBtn" value="Search" />
             </form>
@@ -126,4 +126,4 @@ const Post = (props) => {
     );
 };
 
-export default Post;
+export default Igtv;
