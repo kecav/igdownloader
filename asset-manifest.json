@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/igdownloader/static/css/main.030bea9f.chunk.css",
-    "main.js": "/igdownloader/static/js/main.50d5fd39.chunk.js",
-    "main.js.map": "/igdownloader/static/js/main.50d5fd39.chunk.js.map",
+    "main.js": "/igdownloader/static/js/main.a0b77672.chunk.js",
+    "main.js.map": "/igdownloader/static/js/main.a0b77672.chunk.js.map",
     "runtime-main.js": "/igdownloader/static/js/runtime-main.6fbd680a.js",
     "runtime-main.js.map": "/igdownloader/static/js/runtime-main.6fbd680a.js.map",
     "static/js/2.16dd4376.chunk.js": "/igdownloader/static/js/2.16dd4376.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.6fbd680a.js",
     "static/js/2.16dd4376.chunk.js",
     "static/css/main.030bea9f.chunk.css",
-    "static/js/main.50d5fd39.chunk.js"
+    "static/js/main.a0b77672.chunk.js"
   ]
 }
