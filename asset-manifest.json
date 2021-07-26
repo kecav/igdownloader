@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/igdownloader/static/css/main.030bea9f.chunk.css",
+    "main.css": "/igdownloader/static/css/main.be6b5542.chunk.css",
     "main.js": "/igdownloader/static/js/main.a3ecbfb4.chunk.js",
     "main.js.map": "/igdownloader/static/js/main.a3ecbfb4.chunk.js.map",
     "runtime-main.js": "/igdownloader/static/js/runtime-main.6fbd680a.js",
@@ -8,7 +8,7 @@
     "static/js/2.16dd4376.chunk.js": "/igdownloader/static/js/2.16dd4376.chunk.js",
     "static/js/2.16dd4376.chunk.js.map": "/igdownloader/static/js/2.16dd4376.chunk.js.map",
     "index.html": "/igdownloader/index.html",
-    "static/css/main.030bea9f.chunk.css.map": "/igdownloader/static/css/main.030bea9f.chunk.css.map",
+    "static/css/main.be6b5542.chunk.css.map": "/igdownloader/static/css/main.be6b5542.chunk.css.map",
     "static/js/2.16dd4376.chunk.js.LICENSE.txt": "/igdownloader/static/js/2.16dd4376.chunk.js.LICENSE.txt",
     "static/media/github-icon.f79f5873.svg": "/igdownloader/static/media/github-icon.f79f5873.svg",
     "static/media/igtv-icon.0b202089.svg": "/igdownloader/static/media/igtv-icon.0b202089.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.6fbd680a.js",
     "static/js/2.16dd4376.chunk.js",
-    "static/css/main.030bea9f.chunk.css",
+    "static/css/main.be6b5542.chunk.css",
     "static/js/main.a3ecbfb4.chunk.js"
   ]
 }
