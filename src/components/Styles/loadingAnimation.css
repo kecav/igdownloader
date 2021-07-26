@@ -1,0 +1,88 @@
+/* Animated SVG */
+
+.animatedSVG {
+    position: relative;
+}
+
+@keyframes ldio-0pfsdbxc70ja-o {
+    0% {
+        opacity: 1;
+        transform: translate(0 0)
+    }
+    49.99% {
+        opacity: 1;
+        transform: translate(69.36px, 0)
+    }
+    50% {
+        opacity: 0;
+        transform: translate(69.36px, 0)
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes ldio-0pfsdbxc70ja {
+    0% {
+        transform: translate(0, 0)
+    }
+    50% {
+        transform: translate(69.36px, 0)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.ldio-0pfsdbxc70ja div {
+    position: absolute;
+    width: 69.36px;
+    height: 69.36px;
+    border-radius: 50%;
+    top: 67.32000000000001px;
+    left: 32.64px;
+}
+
+.ldio-0pfsdbxc70ja div:nth-child(1) {
+    background: #e90c59;
+    animation: ldio-0pfsdbxc70ja 0.5076142131979695s linear infinite;
+    animation-delay: -0.25380710659898476s;
+}
+
+.ldio-0pfsdbxc70ja div:nth-child(2) {
+    background: #46dff0;
+    animation: ldio-0pfsdbxc70ja 0.5076142131979695s linear infinite;
+    animation-delay: 0s;
+}
+
+.ldio-0pfsdbxc70ja div:nth-child(3) {
+    background: #e90c59;
+    animation: ldio-0pfsdbxc70ja-o 0.5076142131979695s linear infinite;
+    animation-delay: -0.25380710659898476s;
+}
+
+.loadingio-spinner-dual-ball-kfd7e8c7gtd {
+    width: 204px;
+    height: 204px;
+    display: inline-block;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ldio-0pfsdbxc70ja {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+    /* see note above */
+}
+
+.ldio-0pfsdbxc70ja div {
+    box-sizing: content-box;
+}

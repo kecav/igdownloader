@@ -1,0 +1,36 @@
+.input-form {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    background-color: #000000;
+}
+
+.inputBox {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #202020;
+    color: #fff;
+    width: 17rem;
+    transition: 0.3s ease;
+}
+
+.submitBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    background: #00009f;
+    transition: 0.3s ease;
+}
+
+input.submitBtn:hover {
+    background-color: blue;
+}
+
+input.inputBox:focus {
+    background-color: #2b2b2b;
+}

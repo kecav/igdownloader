@@ -1,6 +1,6 @@
-<svg class="_8h39" width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" style="background: black;">
+<svg class="_8h39" width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" style="background: inherit;">
     <g id="ic-reels-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" style="">
-        <path  d="M13.5145 13.9087C12.848 13.5088 12 13.9889 12 14.7662V23.2338C12 24.0111 12.848 24.4912 13.5145 24.0913L20.5708 19.8575C21.2182 19.4691 21.2182 18.5309 20.5708 18.1425L13.5145 13.9087Z" id="Combined-Shape" fill="#fff">
+        <path d="M13.5145 13.9087C12.848 13.5088 12 13.9889 12 14.7662V23.2338C12 24.0111 12.848 24.4912 13.5145 24.0913L20.5708 19.8575C21.2182 19.4691 21.2182 18.5309 20.5708 18.1425L13.5145 13.9087Z" id="Combined-Shape" fill="#fff">
         </path>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.02944 0 0 4.02944 0 9V23C0 27.9706 4.02944 32 9 32H23C27.9706 32 32 27.9706 32 23V9C32 4.02944 27.9706 0 23 0H9ZM10.2361 2L13.2361 8H19.8889L16.5556 2H10.2361ZM30 10V23C30 26.866 26.866 30 23 30H9C5.13401 30 2 26.866 2 23V10H30ZM18.8435 2L22.1768 8H29.9291C29.4439 4.60771 26.5265 2 23 2H18.8435ZM11 8L8.03312 2.06623C4.95178 2.49196 2.51098 4.92328 2.07089 8H11Z" fill="#fff">
         </path>

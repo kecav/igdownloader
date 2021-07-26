@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Styles/profile.css";
-// import loadingAnimation from '../Media/loadingSVG.svg';
+import LoadingAnimation from "./LoadingAnimation";
+import SearchForm from "./Header/SearchForm";
+import LoadedProfile from "./LoadedResponses/LoadedProfile";
 
 const Profile = (props) => {
     const [userId, setUserId] = useState("");
@@ -42,69 +44,17 @@ const Profile = (props) => {
         } catch (error) {
             console.log(error.message);
         }
-        console.log(responseObj);
+        console.log("from profile.jsx: ", responseObj);
         setIsLoading(false);
         setHasLoaded(true);
     }
 
     return (
         <section id="profile-section" style={{display:props.display}}>
-            <form action="" className="input-form" onSubmit={submitHandler}>
-                <input
-                    type="text"
-                    className="inputBox"
-                    onChange={onChangehandler}
-                    placeholder="Enter user ID"
-                />
-                <input type="submit" className="submitBtn" value="Search" />
-            </form>
-
+            <SearchForm submitHandler={submitHandler} onChangehandler={onChangehandler} placeholder="Enter Username"/>
             <main className="profile-response">
-                {isLoading &&
-                    <div className="animatedSVG">
-                        <div className="loadingio-spinner-dual-ball-kfd7e8c7gtd">
-                            <div className="ldio-0pfsdbxc70ja">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                        </div></div>
-                    </div>
-                }
-                {hasLoaded && (
-                    <>
-                        <article className="profile-description">
-                            <div className="profile-header">
-                                <img
-                                    src={responseObj.hd_profile_pic_versions[0].url}
-                                    className="profile-picture"
-                                    alt="Profile"
-                                />
-                                <section className="profile-counts">
-                                    <div className="media-count">
-                                        <h3>{responseObj.media_count}</h3>
-                                        <p>Posts</p>
-                                    </div>
-                                    <div className="follower-count">
-                                        <h3>{responseObj.follower_count}</h3>
-                                        <p>Followers</p>
-                                    </div>
-                                    <div className="following-count">
-                                        <h3>{responseObj.following_count}</h3>
-                                        <p>Followings</p>
-                                    </div>
-                                </section>
-                            </div>
-                        </article>
-                        <section className="user-intro">
-                            <h3 className="username">{responseObj.username}</h3>
-                            <p className="fullname">{responseObj.full_name}</p>
-                            <p className="bio">{responseObj.biography}</p>
-                        </section>
-                        <section className="profile-picture-container">
-                            <img src={responseObj.hd_profile_pic_url_info.url} className="fullsize-profile-picture" alt="Fullsize" />
-                        </section>
-                    </>
-                )}
+                {isLoading && <LoadingAnimation />}
+                {hasLoaded && <LoadedProfile responseObj={responseObj}/>}
             </main >
         </section>
     );

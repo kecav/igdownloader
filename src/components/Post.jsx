@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./Styles/post.css";
+import LoadingAnimation from "./LoadingAnimation";
+import SearchForm from "./Header/SearchForm";
+import LoadedPost from "./LoadedResponses/LoadedPost";
 
 const Post = (props) => {
     const [postUrl, setPostUrl] = useState();
@@ -24,14 +27,9 @@ const Post = (props) => {
         setIsLoading(true);
         fetchPost();
     }
-
+    
     async function fetchPost() {
         const postId = getId(postUrl);
-        // if(postId!== 11){
-        //     alert("Invalid Url");
-        //     setIsLoading(false);
-        //     return;
-        // }
         const response = await fetch(
             `https://instagram-bulk-profile-scrapper.p.rapidapi.com/clients/api/ig/media_by_id?shortcode=${postId}&response_type=feeds&corsEnabled=true`,
             {
@@ -52,75 +50,12 @@ const Post = (props) => {
 
     return (
         <section id="post-section" style={{ display: props.display }}>
-            <form action="" className="input-form" onSubmit={submitHandler}>
-                <input
-                    type="text"
-                    className="inputBox"
-                    onChange={onChangehandler}
-                    placeholder="Enter post link"
-                />
-                <input type="submit" className="submitBtn" value="Search" />
-            </form>
+            
+            <SearchForm submitHandler={submitHandler} onChangehandler={onChangehandler} placeholder="Enter post link"/>
 
             <div className="post-response">
-                {isLoading && (
-                    <div className="animatedSVG">
-                        <div className="loadingio-spinner-dual-ball-kfd7e8c7gtd">
-                            <div className="ldio-0pfsdbxc70ja">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
-                )}
-                {hasLoaded && (
-                    <>
-                        <header className="reel-header">
-                            <div className="reel-creator">
-                                <img
-                                    src={responseObj.user.profile_pic_url}
-                                    className="profile-picture"
-                                    alt="profile"
-                                />
-                                <div className="creator-info">
-                                    <h3>{responseObj.user.username}</h3>
-                                    <p>{responseObj.user.full_name}</p>
-                                </div>
-                            </div>
-                            <a
-                                href={`https://instagram.com/${responseObj.user.username}`}
-                                className="instagram-anchor"
-                            >
-                                Visit Instagram
-                            </a>
-                        </header>
-
-                        <article className="post-section">
-                            {responseObj.media_type === 2 && (
-                                <video className="post-media" controls>
-                                    <source
-                                        src={responseObj.video_versions[0].url}
-                                        type="video/webm"
-                                    ></source>
-                                </video>
-                            )}
-                            {responseObj.media_type === 1 && (
-                                <img
-                                    src={
-                                        responseObj.image_versions2
-                                            .candidates[0].url
-                                    }
-                                    className="post-media"
-                                    alt=""
-                                />
-                            )}
-                        </article>
-                        <p className="post-caption">
-                            {responseObj.caption.text}
-                        </p>
-                    </>
-                )}
+                {isLoading && <LoadingAnimation />}
+                {hasLoaded && <LoadedPost responseObj={responseObj}/>}
             </div>
         </section>
     );
