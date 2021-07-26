@@ -45,13 +45,13 @@ const Reels = (props) => {
                 },
             });
         const data = await response.json();
-        setResponseObj(data[0].items[0]);
+        setResponseObj(data[0]);
         setIsLoading(false);
         setHasLoaded(true);
     }
 
     return(
-        <section id="reel-section" style={{display:props.display}}>
+        <section id="reel-section">
             
             <SearchForm submitHandler={submitHandler} onChangehandler={onChangehandler} placeholder="Enter Reel link"/>
 

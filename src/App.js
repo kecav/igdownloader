@@ -18,12 +18,12 @@ const App = () => {
         <>
             <Header />
             <Switch>
-                <Route exact path="/" component={Profile} />
-                <Route path="/profile" component={Profile} />
-                <Route path="/story" component={Story} />
-                <Route path="/reel" component={Reels} />
-                <Route path="/post" component={Post} />
-                <Route path="/igtv" component={Igtv} />
+                <Route exact path="/igdownloader/" component={Profile} />
+                <Route path="/igdownloader/profile" component={Profile} />
+                <Route path="/igdownloader/story" component={Story} />
+                <Route path="/igdownloader/reel" component={Reels} />
+                <Route path="/igdownloader/post" component={Post} />
+                <Route path="/igdownloader/igtv" component={Igtv} />
                 <Route component={Error} />
                 <Route />
             </Switch>

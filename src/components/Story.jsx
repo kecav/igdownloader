@@ -9,7 +9,7 @@ const Story = (props) => {
     const [responseObj, setResponseObj] = useState({});
     const [isLoading, setIsLoading] = useState(false);
     const [hasLoaded, setHasLoaded] = useState(false);
-    const [storyArray, setStoryArray] = useState([]);
+    // const [storyArray, setStoryArray] = useState([]);
     
     function submitHandler(e) {
         e.preventDefault();
@@ -40,20 +40,20 @@ const Story = (props) => {
             }
         );
         const data = await response.json();
-        console.log(data);
+        console.log("From Story: ", data);
         setResponseObj(data[0]);
-        setStoryArray(data[0].story.data);
+        // setStoryArray(data[0].story.data);
         setIsLoading(false);
         setHasLoaded(true);
     }
 
     return (
-        <section id="story-section" style={{display:props.display}}>
+        <section id="story-section">
             <SearchForm submitHandler={submitHandler} onChangehandler={onChangehandler} placeholder="Enter Username"/>
 
             <main className="story-response">
                 {isLoading && <LoadingAnimation />}
-                {hasLoaded && <LoadedStory responseObj={responseObj} storyArray={storyArray}/>}
+                {hasLoaded && <LoadedStory responseObj={responseObj} />}
             </main>
         </section>
     );

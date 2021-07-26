@@ -43,13 +43,13 @@ const Post = (props) => {
             }
         );
         const data = await response.json();
-        setResponseObj(data[0].items[0]);
+        setResponseObj(data[0]);
         setIsLoading(false);
         setHasLoaded(true);
     }
 
     return (
-        <section id="post-section" style={{ display: props.display }}>
+        <section id="post-section">
             
             <SearchForm submitHandler={submitHandler} onChangehandler={onChangehandler} placeholder="Enter post link"/>
 

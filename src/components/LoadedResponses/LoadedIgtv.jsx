@@ -1,6 +1,17 @@
 const LoadedIgtv = (props) => {
-    const responseObj = props.responseObj;
+    let responseObj = props.responseObj;
     
+    // If no post found
+    if (responseObj.message) {
+        return (
+            <div className="error-page">
+                <h1>No IGTV found !</h1>
+                <p>Make sure you've entered proper link.</p>
+            </div>
+        );
+    }
+    responseObj = responseObj.items[0];
+
     return (
         <>
             <header className="reel-header">

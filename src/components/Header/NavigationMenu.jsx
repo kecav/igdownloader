@@ -12,7 +12,7 @@ const NavigationMenu = (props) => {
             <ul className="selection-menu">
                 <li>
                     <NavLink
-                        to="/profile"
+                        to="/igdownloader/profile"
                         className="nav-buttons"
                         activeClassName="active-navigation"
                     >
@@ -26,7 +26,7 @@ const NavigationMenu = (props) => {
                 </li>
                 <li>
                     <NavLink
-                        to="/story"
+                        to="/igdownloader/story"
                         className="nav-buttons"
                         activeClassName="active-navigation"
                     >
@@ -40,7 +40,7 @@ const NavigationMenu = (props) => {
                 </li>
                 <li>
                     <NavLink
-                        to="reel"
+                        to="/igdownloader/reel"
                         className="nav-buttons"
                         activeClassName="active-navigation"
                     >
@@ -54,7 +54,7 @@ const NavigationMenu = (props) => {
                 </li>
                 <li>
                     <NavLink
-                        to="post"
+                        to="/igdownloader/post"
                         className="nav-buttons"
                         activeClassName="active-navigation"
                     >
@@ -68,7 +68,7 @@ const NavigationMenu = (props) => {
                 </li>
                 <li>
                     <NavLink
-                        to="igtv"
+                        to="/igdownloader/igtv"
                         className="nav-buttons"
                         activeClassName="active-navigation"
                     >

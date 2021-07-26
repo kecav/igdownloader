@@ -46,13 +46,13 @@ const Igtv = (props) => {
         const data = await response.json();
         console.log(response, data);
 
-        setResponseObj(data[0].items[0]);
+        setResponseObj(data[0]);
         setHasLoaded(true);
         setIsLoading(false);
     }
 
     return (
-        <section id="post-section" style={{ display: props.display }}>
+        <section id="post-section">
             
             <SearchForm submitHandler={submitHandler} onChangehandler={onChangehandler} placeholder="Enter IGTV link"/>
 

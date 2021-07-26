@@ -1,5 +1,17 @@
 const LoadedPost = (props) => {
-    const responseObj = props.responseObj;
+    let responseObj = props.responseObj;
+    // console.log("Loaded Response: ",responseObj);
+
+    // If no post found
+    if (responseObj.message) {
+        return (
+            <div className="error-page">
+                <h1>No post found !</h1>
+                <p>Make sure you've entered proper link.</p>
+            </div>
+        );
+    }
+    responseObj = responseObj.items[0];
 
     return (
         <>
@@ -32,9 +44,9 @@ const LoadedPost = (props) => {
                         ></source>
                     </video>
                 )}
-                {responseObj.media_type === 1 && (
+                {responseObj.media_type === 8 && (
                     <img
-                        src={responseObj.image_versions2.candidates[0].url}
+                        src={responseObj.carousel_media[0].image_versions2.candidates[0].url}
                         className="post-media"
                         alt="post media"
                     />

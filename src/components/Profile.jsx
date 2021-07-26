@@ -50,7 +50,7 @@ const Profile = (props) => {
     }
 
     return (
-        <section id="profile-section" style={{display:props.display}}>
+        <section id="profile-section">
             <SearchForm submitHandler={submitHandler} onChangehandler={onChangehandler} placeholder="Enter Username"/>
             <main className="profile-response">
                 {isLoading && <LoadingAnimation />}

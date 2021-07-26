@@ -1,5 +1,18 @@
 const LoadedReels = (props) => {
-    const responseObj = props.responseObj;
+    let responseObj = props.responseObj;
+    console.log(responseObj);
+
+    // If no reel found
+    if (responseObj.message) {
+        return (
+            <div className="error-page">
+                <h1>No reel found !</h1>
+                <p>Make sure you've entered proper link.</p>
+            </div>
+        );
+    }
+    responseObj = responseObj.items[0];
+    
     return (
         <>
             <header className="reel-header">
@@ -28,7 +41,7 @@ const LoadedReels = (props) => {
                     download={responseObj.user.username}
                 ></source>
             </video>
-            <p class="reel-caption">{responseObj.caption.text}</p>
+            <p className="reel-caption">{responseObj.caption.text}</p>
         </>
     );
 };
