@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/igdownloader/static/css/main.28957948.chunk.css",
-    "main.js": "/igdownloader/static/js/main.521798d9.chunk.js",
-    "main.js.map": "/igdownloader/static/js/main.521798d9.chunk.js.map",
+    "main.css": "/igdownloader/static/css/main.030bea9f.chunk.css",
+    "main.js": "/igdownloader/static/js/main.50d5fd39.chunk.js",
+    "main.js.map": "/igdownloader/static/js/main.50d5fd39.chunk.js.map",
     "runtime-main.js": "/igdownloader/static/js/runtime-main.6fbd680a.js",
     "runtime-main.js.map": "/igdownloader/static/js/runtime-main.6fbd680a.js.map",
-    "static/js/2.d6f2232e.chunk.js": "/igdownloader/static/js/2.d6f2232e.chunk.js",
-    "static/js/2.d6f2232e.chunk.js.map": "/igdownloader/static/js/2.d6f2232e.chunk.js.map",
+    "static/js/2.16dd4376.chunk.js": "/igdownloader/static/js/2.16dd4376.chunk.js",
+    "static/js/2.16dd4376.chunk.js.map": "/igdownloader/static/js/2.16dd4376.chunk.js.map",
     "index.html": "/igdownloader/index.html",
-    "static/css/main.28957948.chunk.css.map": "/igdownloader/static/css/main.28957948.chunk.css.map",
-    "static/js/2.d6f2232e.chunk.js.LICENSE.txt": "/igdownloader/static/js/2.d6f2232e.chunk.js.LICENSE.txt",
+    "static/css/main.030bea9f.chunk.css.map": "/igdownloader/static/css/main.030bea9f.chunk.css.map",
+    "static/js/2.16dd4376.chunk.js.LICENSE.txt": "/igdownloader/static/js/2.16dd4376.chunk.js.LICENSE.txt",
+    "static/media/github-icon.f79f5873.svg": "/igdownloader/static/media/github-icon.f79f5873.svg",
     "static/media/igtv-icon.0b202089.svg": "/igdownloader/static/media/igtv-icon.0b202089.svg",
     "static/media/post-icon.4b5e2aea.svg": "/igdownloader/static/media/post-icon.4b5e2aea.svg",
     "static/media/profile-icon.568b3adb.svg": "/igdownloader/static/media/profile-icon.568b3adb.svg",
-    "static/media/reel-icon.a7070464.svg": "/igdownloader/static/media/reel-icon.a7070464.svg",
-    "static/media/story-icon.914587de.svg": "/igdownloader/static/media/story-icon.914587de.svg"
+    "static/media/reel-icon.8dddab33.svg": "/igdownloader/static/media/reel-icon.8dddab33.svg",
+    "static/media/story-icon.3bc05ea5.svg": "/igdownloader/static/media/story-icon.3bc05ea5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6fbd680a.js",
-    "static/js/2.d6f2232e.chunk.js",
-    "static/css/main.28957948.chunk.css",
-    "static/js/main.521798d9.chunk.js"
+    "static/js/2.16dd4376.chunk.js",
+    "static/css/main.030bea9f.chunk.css",
+    "static/js/main.50d5fd39.chunk.js"
   ]
 }
