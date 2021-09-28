@@ -66,10 +66,6 @@
 }
 
 @media screen and (max-width: 520px) {
-    .reel-response {
-        margin: 2rem;
-        width: auto;
-    }
     .profile-picture {
         width: 2.5rem;
         height: 2.5rem;

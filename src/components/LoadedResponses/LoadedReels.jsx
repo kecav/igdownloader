@@ -1,5 +1,8 @@
 const LoadedReels = (props) => {
     let responseObj = props.responseObj;
+    // let downloadFileName = responseObj.user.username;
+
+    let downloadFileName = "reel.mp4";
     console.log(responseObj);
 
     // If no reel found
@@ -12,7 +15,7 @@ const LoadedReels = (props) => {
         );
     }
     responseObj = responseObj.items[0];
-    
+
     return (
         <>
             <header className="reel-header">
@@ -38,9 +41,18 @@ const LoadedReels = (props) => {
                 <source
                     src={responseObj.video_versions[0].url}
                     type="video/webm"
-                    download={responseObj.user.username}
+                    download={downloadFileName}
                 ></source>
             </video>
+            {/* <a
+                href={responseObj.video_versions[0].url}
+                rel="noreferrer"
+                target="_blank"
+                className="instagram-anchor"
+                download={downloadFileName}
+            >
+                Downloading
+            </a> */}
             <p className="reel-caption">{responseObj.caption.text}</p>
         </>
     );

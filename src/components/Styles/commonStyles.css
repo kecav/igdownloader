@@ -21,3 +21,12 @@
     margin: 0 auto;
     width: 10rem;
 }
+
+@media screen and (max-width: 520px) {
+    .reel-response,
+    .post-response,
+    .igtv-response {
+        margin: 2rem;
+        width: auto;
+    }
+}

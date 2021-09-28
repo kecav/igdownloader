@@ -1,4 +1,5 @@
 import "../Styles/footer.css";
+
 import GithubIco from '../../Media/github-icon.svg';
 const Footer = () => {
     return (

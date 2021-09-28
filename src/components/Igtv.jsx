@@ -32,14 +32,14 @@ const Igtv = (props) => {
         const igtvId = getId(igtvUrl);
 
         const response = await fetch(
-            `https://instagram-bulk-profile-scrapper.p.rapidapi.com/clients/api/ig/media_by_id?shortcode=${igtvId}&response_type=feeds&corsEnabled=true`,
+            `${process.env.REACT_APP_IG_IGTV}${igtvId}`,
             {
                 method: "GET",
                 headers: {
                     "x-rapidapi-key":
-                        "1f036ab3bdmsha432bc3323a6641p1a4a6cjsn47c217d23a5d",
+                        `${process.env.REACT_APP_KEY}`,
                     "x-rapidapi-host":
-                        "instagram-bulk-profile-scrapper.p.rapidapi.com",
+                        `${process.env.REACT_APP_HOST}`,
                 },
             }
         );
