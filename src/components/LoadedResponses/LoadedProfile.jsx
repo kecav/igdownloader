@@ -1,6 +1,5 @@
 const LoadedProfile = (props) => {
     const responseObj = props.responseObj;
-    console.log("From loaded: ", responseObj);
     const reponseError = responseObj.error_code;
 
     return (

@@ -1,6 +1,5 @@
 const LoadedPost = (props) => {
     let responseObj = props.responseObj;
-    // console.log("Loaded Response: ",responseObj);
 
     // If no post found
     if (responseObj.message) {

@@ -40,9 +40,7 @@ const Story = (props) => {
             }
         );
         const data = await response.json();
-        console.log("From Story: ", data);
         setResponseObj(data[0]);
-        // setStoryArray(data[0].story.data);
         setIsLoading(false);
         setHasLoaded(true);
     }

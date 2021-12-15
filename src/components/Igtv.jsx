@@ -44,8 +44,6 @@ const Igtv = (props) => {
             }
         );
         const data = await response.json();
-        console.log(response, data);
-
         setResponseObj(data[0]);
         setHasLoaded(true);
         setIsLoading(false);

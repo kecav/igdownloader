@@ -10,7 +10,6 @@ const LoadedStory = (props) => {
             </div>
         );
     }
-    // console.log(responseObj, "From loaded");
     const storyArray = responseObj.story.data;
 
     // If account exists but no story uploaded

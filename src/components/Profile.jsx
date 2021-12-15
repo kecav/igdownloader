@@ -44,7 +44,6 @@ const Profile = (props) => {
         } catch (error) {
             console.log(error.message);
         }
-        console.log("from profile.jsx: ", responseObj);
         setIsLoading(false);
         setHasLoaded(true);
     }
